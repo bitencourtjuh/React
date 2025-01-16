@@ -1,0 +1,7 @@
+.container{
+  min-width: 450px;
+  min-height: 450px;
+  background-color: #217517;
+  padding: 2rem;
+  border-radius: 15px;
+}

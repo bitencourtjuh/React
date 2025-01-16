@@ -1,0 +1,92 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Decoração",
+    "description": "Escolha a decoração para sua festa, e nós a montamos.",
+    "price": 1400,
+    "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+  }
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/677c21509f9401325e9f10ed
+
+###
+DELETE  http://localhost:3000/api/services/677c21509f9401325e9f10ed
+###
+PUT http://localhost:3000/api/services/677c25ebad9c8bdb669ee178
+Content-Type: application/json
+
+{
+    "name": "TESTE ATUALIZAÇÃO",
+    "description": "Alguma descrição",
+    "price": 2500,
+    "image": "https://uploads.metroimg.com/wp-content/uploads/2022/03/25165316/Via-Lactea.jpg"
+}
+
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento",
+    "author": "Julia",
+    "description": "sla",
+    "budget": 9000,
+    "image": "https://faro.edu.br/wp-content/uploads/2018/09/229307-x-dicas-para-economizar-durante-a-faculdade-para-a-festa-de-formatura.jpg",
+    "services": [
+        {
+    "name": "Algum serviço 1",
+    "description": "Alguma descrição",
+    "price": 3000,
+    "image": "https://uploads.metroimg.com/wp-content/uploads/2022/03/25165316/Via-Lactea.jpg"
+},
+{
+    "name": "Algum serviço",
+    "description": "Alguma descrição 1",
+    "price": 1400,
+    "image": "https://uploads.metroimg.com/wp-content/uploads/2022/03/25165316/Via-Lactea.jpg"
+}
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/677c3430be90071985d36d9a
+
+###
+DELETE  http://localhost:3000/api/parties/677c3430be90071985d36d9a
+
+###
+PUT http://localhost:3000/api/parties/677c3530be90071985d36d9c
+Content-Type: application/json
+
+{
+    "title": "ATUAIZAÇÃO",
+    "author": "Julia",
+    "description": "sla",
+    "budget": 9000,
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição",
+            "price": 3000,
+            "image": "https://uploads.metroimg.com/wp-content/uploads/2022/03/25165316/Via-Lactea.jpg"
+        },
+        {
+            "name": "Algum serviço",
+            "description": "Alguma descrição 1",
+            "price": 1400,
+            "image": "https://uploads.metroimg.com/wp-content/uploads/2022/03/25165316/Via-Lactea.jpg"
+        }
+    ]
+}
+
+
+
